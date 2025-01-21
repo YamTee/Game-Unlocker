@@ -216,7 +216,7 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
     private static void propsToChangeS24U() {
         setPropValue("BRAND", "SAMSUNG");
         setPropValue("DEVICE", "S24 ULTRA");
-        setPropValue("MANUFACTURER", "SM-S928B");
+        setPropValue("MANUFACTURER", "Samsung");
         setPropValue("MODEL", "SM-S928B");
     }
 
