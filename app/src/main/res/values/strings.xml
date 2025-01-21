@@ -51,5 +51,7 @@
 		<item>com.vng.pubgmobile</item>
 		<item>jp.konami.pesam</item>
 		<item>vng.games.revelation.mobile</item>
+		<item>in.startv.hotstar</item>
+		<item>com.amazon.avod.thirdpartyclient</item>
 	</string-array>
 </resources>

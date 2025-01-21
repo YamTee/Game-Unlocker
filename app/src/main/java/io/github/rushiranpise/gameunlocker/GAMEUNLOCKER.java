@@ -21,87 +21,97 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
     private static final String TAG = GAMEUNLOCKER.class.getSimpleName();
     // Packages to Spoof as ROG Phone 6
     private static final String[] packagesToChangeROG6 = {
-        "com.activision.callofduty.shooter",
-        "com.activision.callofudty.warzone",
-        "com.ea.gp.fifamobile",
-        "com.gameloft.android.ANMP.GloftA9HM",
-        "com.madfingergames.legends",
-        "com.pearlabyss.blackdesertm",
-        "com.pearlabyss.blackdesertm.gl"
+            "com.activision.callofduty.shooter",
+            "com.activision.callofudty.warzone",
+            "com.ea.gp.fifamobile",
+            "com.gameloft.android.ANMP.GloftA9HM",
+            "com.madfingergames.legends",
+            "com.pearlabyss.blackdesertm",
+            "com.pearlabyss.blackdesertm.gl"
     };
 
     // Packages to Spoof as Xperia 5
     private static final String[] packagesToChangeXP5 = {
-        "com.garena.game.codm",
-        "com.tencent.tmgp.kr.codm",
-        "com.vng.codmvn",
-        "com.garena.game.kgvn"
+            "com.garena.game.codm",
+            "com.tencent.tmgp.kr.codm",
+            "com.vng.codmvn",
+            "com.garena.game.kgvn"
     };
 
     // Packages to Spoof as OnePlus 8 Pro
     private static final String[] packagesToChangeOP8P = {
-        "com.netease.lztgglobal",
-        "com.pubg.imobile",
-        "com.pubg.krmobile",
-        "com.rekoo.pubgm",
-        "com.riotgames.league.wildrift",
-        "com.riotgames.league.wildrifttw",
-        "com.riotgames.league.wildriftvn",
-        "com.riotgames.league.teamfighttactics",
-        "com.riotgames.league.teamfighttacticstw",
-        "com.riotgames.league.teamfighttacticsvn",
-        "com.tencent.ig",
-        "com.tencent.tmgp.pubgmhd",
-        "com.vng.pubgmobile",
-        "vng.games.revelation.mobile",
-        "com.ngame.allstar.eu",
-        "com.mojang.minecraftpe",
-        "com.YoStar.AetherGazer",
-        "com.miHoYo.GenshinImpact",
-        "com.garena.game.lmjx"
+            "com.netease.lztgglobal",
+            "com.riotgames.league.wildrift",
+            "com.riotgames.league.wildrifttw",
+            "com.riotgames.league.wildriftvn",
+            "com.riotgames.league.teamfighttactics",
+            "com.riotgames.league.teamfighttacticstw",
+            "com.riotgames.league.teamfighttacticsvn",
+            "com.tencent.ig",
+            "com.tencent.tmgp.pubgmhd",
+            "com.vng.pubgmobile",
+            "vng.games.revelation.mobile",
+            "com.ngame.allstar.eu",
+            "com.mojang.minecraftpe",
+            "com.YoStar.AetherGazer",
+            "com.miHoYo.GenshinImpact",
+            "com.garena.game.lmjx"
+    };
+
+    // Packages to Spoof as Samsung S24 Ultra
+    private static final String[] packagesToChangeS24U = {
+            "com.pubg.imobile",
+            "com.pubg.krmobile",
+            "com.rekoo.pubgm",
     };
 
     // Packages to Spoof as OnePlus 9 Pro
     private static final String[] packagesToChangeOP9P = {
-        "com.epicgames.fortnite",
-        "com.epicgames.portal",
-        "com.tencent.lolm",
-        "jp.konami.pesam"
+            "com.epicgames.fortnite",
+            "com.epicgames.portal",
+            "com.tencent.lolm",
+            "jp.konami.pesam"
+    };
+
+    // Packages to Spoof as OnePlus 10 Pro
+    private static final String[] packagesToChangeOP10P = {
+            "com.amazon.avod.thirdpartyclient",
+            "in.startv.hotstar"
     };
 
     // Packages to Spoof as Mi 11T Pro
     private static final String[] packagesToChangeMI11TP = {
-        "com.ea.gp.apexlegendsmobilefps",
-        "com.mobilelegends.mi",
-        "com.levelinfinite.hotta.gp",
-        "com.supercell.clashofclans",
-        "com.vng.mlbbvn"
+            "com.ea.gp.apexlegendsmobilefps",
+            "com.mobilelegends.mi",
+            "com.levelinfinite.hotta.gp",
+            "com.supercell.clashofclans",
+            "com.vng.mlbbvn"
     };
 
     // Packages to Spoof as Xiaomi 13 Pro
     private static final String[] packagesToChangeMI13P = {
-        "com.levelinfinite.sgameGlobal",
-        "com.tencent.tmgp.sgame"
+            "com.levelinfinite.sgameGlobal",
+            "com.tencent.tmgp.sgame"
     };
 
     // Packages to Spoof as POCO F5
     private static final String[] packagesToChangeF5 = {
-        "com.dts.freefiremax",
-        "com.dts.freefireth",
-        "com.mobile.legends"
+            "com.dts.freefiremax",
+            "com.dts.freefireth",
+            "com.mobile.legends"
     };
 
     // Packages to Spoof as Black Shark 4
     private static final String[] packagesToChangeBS4 = {
-        "com.proximabeta.mf.uamo"
+            "com.proximabeta.mf.uamo"
     };
 
     // Packages to Spoof as iQOO 11 Pro
     private static final String[] packagesToChangeiQ11P = {
-        "com.tencent.KiHan",
-        "com.tencent.tmgp.cf",
-        "com.tencent.tmgp.cod",
-        "com.tencent.tmgp.gnyx"
+            "com.tencent.KiHan",
+            "com.tencent.tmgp.cf",
+            "com.tencent.tmgp.cod",
+            "com.tencent.tmgp.gnyx"
     };
 
     @Override
@@ -133,9 +143,19 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
             XposedBridge.log("Spoofed " + packageName + " as OnePlus 8 Pro");
         }
 
+        if (Arrays.asList(packagesToChangeS24U).contains(packageName)) {
+            propsToChangeS24U();
+            XposedBridge.log("Spoofed " + packageName + " as Samsung S24 Ultra");
+        }
+
         if (Arrays.asList(packagesToChangeOP9P).contains(packageName)) {
             propsToChangeOP9P();
             XposedBridge.log("Spoofed " + packageName + " as OnePlus 9 Pro");
+        }
+
+        if (Arrays.asList(packagesToChangeOP10P).contains(packageName)) {
+            propsToChangeOP10P();
+            XposedBridge.log("Spoofed " + packageName + " as OnePlus 10 Pro");
         }
 
         // Poco
@@ -192,13 +212,29 @@ public class GAMEUNLOCKER implements IXposedHookLoadPackage {
         setPropValue("MODEL", "IN2020");
     }
 
+    // Props to Spoof as Samsung S24 Ultra
+    private static void propsToChangeS24U() {
+        setPropValue("BRAND", "SAMSUNG");
+        setPropValue("DEVICE", "S24 ULTRA");
+        setPropValue("MANUFACTURER", "SM-S928B");
+        setPropValue("MODEL", "SM-S928B");
+    }
+
     // Props to Spoof as OnePlus 9 Pro
     private static void propsToChangeOP9P() {
         setPropValue("MANUFACTURER", "OnePlus");
         setPropValue("MODEL", "LE2123");
     }
 
-    //Poco
+    // Props to Spoof as OnePlus 10 Pro
+    private static void propsToChangeOP10P() {
+        setPropValue("BRAND", "ONEPLUS");
+        setPropValue("DEVICE", "OnePlus 10 Pro");
+        setPropValue("MANUFACTURER", "OnePlus");
+        setPropValue("MODEL", "NE2213");
+    }
+
+    // Poco
     // Props to Spoof as Poco F5
     private static void propsToChangeF5() {
         setPropValue("MANUFACTURER", "Xiaomi");
